@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/seige"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.appbar.MaterialToolbar
+        app:title="Puzzle"
+        app:titleTextColor="@color/black"
+        android:id="@+id/top_app_bar"
+        app:menu="@menu/top_app_bar"
+        android:background="@color/darkSeige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textViewPuzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Ayo, Solve this puzzle! Good luck!"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOne"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPuzzle"
+        android:background="@drawable/image9"
+        android:tag="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTwo"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnOne"
+        app:layout_constraintTop_toTopOf="@id/btnOne"
+        android:background="@drawable/image8"
+        android:tag="2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnThree"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnTwo"
+        app:layout_constraintTop_toTopOf="@id/btnTwo"
+        android:background="@drawable/image7"
+        android:tag="3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFour"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOne"
+        android:background="@drawable/image6"
+        android:tag="4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFive"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnFour"
+        app:layout_constraintTop_toTopOf="@id/btnFour"
+        android:background="@drawable/image5"
+        android:tag="5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSix"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnFive"
+        app:layout_constraintTop_toTopOf="@id/btnFive"
+        android:background="@drawable/image4"
+        android:tag="6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeven"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFour"
+        android:background="@drawable/image3"
+        android:tag="7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEight"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnSeven"
+        app:layout_constraintTop_toTopOf="@id/btnSeven"
+        android:background="@drawable/image2"
+        android:tag="8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNine"
+        android:layout_width="122dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toEndOf="@id/btnEight"
+        app:layout_constraintTop_toTopOf="@id/btnEight"
+        android:text="none"
+        android:tag="9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

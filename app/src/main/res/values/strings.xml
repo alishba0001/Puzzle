@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Puzzle</string>
+    <dimen name="btnWidth">100</dimen>
+    <dimen name="btnHeight">150</dimen>
+</resources>
